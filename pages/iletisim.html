@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CURATOR İletişim — Uzman ekibimizle iletişime geçin.">
+  <title>CURATOR — İletişim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/iletisim.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <svg width="26" height="26" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <rect width="28" height="28" rx="6" fill="#000666"/>
+        <path d="M7 14C7 10.134 10.134 7 14 7C17.866 7 21 10.134 21 14C21 17.866 17.866 21 14 21" stroke="#a0f399" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="14" cy="21" r="1.5" fill="#1b6d24"/>
+      </svg>
+      CURATOR
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="hizmetler.html">Hizmetler</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      <li><a href="iletisim.html" class="active">İletişim</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="iletisim.html" class="btn-nav">
+        Başlayalım <span class="material-symbols-outlined">arrow_forward</span>
+      </a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menü" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- PAGE HERO -->
+<section class="contact-hero">
+  <div class="contact-hero-bg">
+    <div class="contact-hero-orb contact-hero-orb--1"></div>
+    <div class="contact-hero-orb contact-hero-orb--2"></div>
+    <div class="contact-hero-dots"></div>
+  </div>
+  <div class="container contact-hero-inner">
+    <div class="contact-hero-content" data-reveal>
+      <span class="section-tag">Bize Ulaşın</span>
+      <h1 class="contact-hero-title">
+        Bir Sonraki Stratejik<br>
+        <em>Adımı Atın</em>
+      </h1>
+      <p class="contact-hero-desc">
+        Global danışmanlık ekibimiz yüksek karmaşıklıklı projelerinizde size destek olmaya hazır. Özelleştirilmiş bir konsültasyon için ulaşın.
+      </p>
+    </div>
+    <div class="contact-hero-cards" data-reveal data-reveal-delay="150">
+      <div class="hero-info-card">
+        <div class="hero-info-icon">
+          <span class="material-symbols-outlined">schedule</span>
+        </div>
+        <div>
+          <strong>Yanıt Süresi</strong>
+          <span>24 saat içinde</span>
+        </div>
+      </div>
+      <div class="hero-info-card">
+        <div class="hero-info-icon">
+          <span class="material-symbols-outlined">language</span>
+        </div>
+        <div>
+          <strong>Dil Desteği</strong>
+          <span>TR · EN · DE · FR</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT LAYOUT -->
+<section class="contact-section section-pad">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap" data-reveal>
+        <div class="form-header">
+          <h2>Mesaj Gönderin</h2>
+          <p>Formu doldurun, size en kısa sürede dönüş yapalım.</p>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Ad Soyad</label>
+              <input
+                type="text" id="name" name="name"
+                placeholder="Ahmet Yılmaz"
+                required autocomplete="name"
+              >
+            </div>
+            <div class="form-group">
+              <label for="email">E-posta</label>
+              <input
+                type="email" id="email" name="email"
+                placeholder="ahmet@sirket.com"
+                required autocomplete="email"
+              >
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="company">Şirket <span class="form-optional">(isteğe bağlı)</span></label>
+            <input
+              type="text" id="company" name="company"
+              placeholder="Şirket Adı"
+              autocomplete="organization"
+            >
+          </div>
+          <div class="form-group">
+            <label for="subject">Konu</label>
+            <div class="select-wrap">
+              <select id="subject" name="subject">
+                <option value="" disabled selected>Bir konu seçin</option>
+                <option>Stratejik Danışmanlık</option>
+                <option>Dijital Dönüşüm</option>
+                <option>Veri Analitiği</option>
+                <option>Risk Yönetimi</option>
+                <option>Genel Bilgi</option>
+              </select>
+              <span class="material-symbols-outlined select-arrow">expand_more</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Mesajınız</label>
+            <textarea
+              id="message" name="message"
+              rows="5"
+              placeholder="Size nasıl yardımcı olabiliriz?"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-footer">
+            <button type="submit" class="form-submit" id="submitBtn">
+              <span class="btn-text">Mesajı Gönder</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+              <span class="btn-spinner" hidden>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10" opacity=".25"/><path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"/></svg>
+              </span>
+            </button>
+            <p class="form-privacy">
+              <span class="material-symbols-outlined">lock</span>
+              Bilgileriniz gizli tutulur, üçüncü taraflarla paylaşılmaz.
+            </p>
+          </div>
+
+          <div class="form-success" id="formSuccess" hidden>
+            <div class="success-icon">
+              <span class="material-symbols-outlined">check_circle</span>
+            </div>
+            <div>
+              <strong>Mesajınız alındı!</strong>
+              <p>En kısa sürede size dönüş yapacağız. Teşekkür ederiz.</p>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="contact-aside" data-reveal data-reveal-delay="150">
+
+        <!-- İletişim Kartları -->
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <span class="material-symbols-outlined">location_on</span>
+            </div>
+            <div class="contact-card-body">
+              <h3>Genel Merkez</h3>
+              <address>
+                Levent, Büyükdere Cd. No:123<br>
+                İstanbul, Türkiye 34330
+              </address>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <span class="material-symbols-outlined">call</span>
+            </div>
+            <div class="contact-card-body">
+              <h3>Telefon</h3>
+              <p>
+                <a href="tel:+902121234567">+90 (212) 123 45 67</a><br>
+                <a href="tel:+902121234599">Destek: +90 (212) 123 45 99</a>
+              </p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <span class="material-symbols-outlined">mail</span>
+            </div>
+            <div class="contact-card-body">
+              <h3>E-posta</h3>
+              <p>
+                <a href="mailto:advisory@curator.pro">advisory@curator.pro</a><br>
+                <a href="mailto:press@curator.pro">press@curator.pro</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Çalışma Saatleri -->
+        <div class="working-hours">
+          <h3>
+            <span class="material-symbols-outlined">schedule</span>
+            Çalışma Saatleri
+          </h3>
+          <ul>
+            <li>
+              <span>Pazartesi — Cuma</span>
+              <strong>09:00 — 18:00</strong>
+            </li>
+            <li>
+              <span>Cumartesi</span>
+              <strong>10:00 — 14:00</strong>
+            </li>
+            <li>
+              <span>Pazar</span>
+              <strong>Kapalı</strong>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Harita -->
+        <div class="map-wrap">
+          <iframe
+            title="Curator Ofis Konumu"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=28.98%2C41.07%2C29.02%2C41.09&layer=mapnik&marker=41.08%2C29.00"
+          ></iframe>
+          <div class="map-pin-overlay">
+            <div class="map-pin">
+              <span class="material-symbols-outlined">location_on</span>
+            </div>
+          </div>
+          
+            href="https://www.google.com/maps/search/Levent+Istanbul"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="map-open-link"
+          >
+            Google Maps'te Aç
+            <span class="material-symbols-outlined">open_in_new</span>
+          </a>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+</section>
+
+
+<!-- SSS -->
+<section class="faq-section section-pad">
+  <div class="container">
+    <div class="faq-header" data-reveal>
+      <span class="section-tag">Sık Sorulan Sorular</span>
+      <h2 class="section-title">Aklınızdaki <em>Sorular</em></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item" data-reveal data-reveal-delay="0">
+        <button class="faq-question" aria-expanded="false">
+          <span>İlk görüşme ücretli mi?</span>
+          <span class="faq-icon material-symbols-outlined">add</span>
+        </button>
+        <div class="faq-answer">
+          <p>Hayır. İlk stratejik görüşmemiz tamamen ücretsizdir. Sizi ve ihtiyaçlarınızı tanımak için 30-45 dakikalık bir keşif görüşmesi yapıyoruz.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-reveal data-reveal-delay="80">
+        <button class="faq-question" aria-expanded="false">
+          <span>Hangi sektörlerde hizmet veriyorsunuz?</span>
+          <span class="faq-icon material-symbols-outlined">add</span>
+        </button>
+        <div class="faq-answer">
+          <p>Finans, teknoloji, perakende, üretim, sağlık ve kamu sektörü dahil 20'den fazla sektörde aktif olarak hizmet veriyoruz.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-reveal data-reveal-delay="160">
+        <button class="faq-question" aria-expanded="false">
+          <span>Proje süreci nasıl işliyor?</span>
+          <span class="faq-icon material-symbols-outlined">add</span>
+        </button>
+        <div class="faq-answer">
+          <p>Keşif → Analiz → Strateji → Uygulama → Ölçüm şeklinde 5 aşamalı bir süreç izliyoruz. Her aşamada sizi bilgilendiriyor ve onayınızı alıyoruz.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-reveal data-reveal-delay="0">
+        <button class="faq-question" aria-expanded="false">
+          <span>Minimum proje bütçesi var mı?</span>
+          <span class="faq-icon material-symbols-outlined">add</span>
+        </button>
+        <div class="faq-answer">
+          <p>Proje kapsamına göre değişmekle birlikte, danışmanlık projelerimiz genellikle 10.000 USD'den başlamaktadır. Size özel bir teklif için iletişime geçin.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-reveal data-reveal-delay="80">
+        <button class="faq-question" aria-expanded="false">
+          <span>Uzaktan çalışıyor musunuz?</span>
+          <span class="faq-icon material-symbols-outlined">add</span>
+        </button>
+        <div class="faq-answer">
+          <p>Evet. Hem uzaktan hem yerinde çalışabiliyoruz. Global müşterilerimizin büyük çoğunluğuyla tam uzaktan süreçler yürütüyoruz.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-reveal data-reveal-delay="160">
+        <button class="faq-question" aria-expanded="false">
+          <span>Referans verebilir misiniz?</span>
+          <span class="faq-icon material-symbols-outlined">add</span>
+        </button>
+        <div class="faq-answer">
+          <p>Evet, müşteri onayı dahilinde referans ve vaka çalışmaları paylaşabiliyoruz. İlk görüşmede talep edebilirsiniz.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top container">
+    <div class="footer-brand">
+      <a href="../index.html" class="footer-logo">
+        <svg width="22" height="22" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <rect width="28" height="28" rx="6" fill="#000666"/>
+          <path d="M7 14C7 10.134 10.134 7 14 7C17.866 7 21 10.134 21 14C21 17.866 17.866 21 14 21" stroke="#a0f399" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="14" cy="21" r="1.5" fill="#1b6d24"/>
+        </svg>
+        CURATOR
+      </a>
+      <p>Dijital dünyanın profesyonel küratörü. İşinizi modernize ediyoruz.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter/X">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+    </div>
+    <nav class="footer-col">
+      <h4>Hizmetler</h4>
+      <ul>
+        <li><a href="hizmetler.html">Stratejik Danışmanlık</a></li>
+        <li><a href="hizmetler.html">Dijital Dönüşüm</a></li>
+        <li><a href="hizmetler.html">Veri Analitiği</a></li>
+        <li><a href="hizmetler.html">Teknoloji</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col">
+      <h4>Kurumsal</h4>
+      <ul>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="#">Kariyer</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h4>Bize Ulaşın</h4>
+      <address>
+        <div class="footer-contact-row">
+          <span class="material-symbols-outlined">location_on</span>
+          <span>Levent, Büyükdere Cd. No:123, İstanbul</span>
+        </div>
+        <div class="footer-contact-row">
+          <span class="material-symbols-outlined">mail</span>
+          <a href="mailto:info@curator.com">info@curator.com</a>
+        </div>
+        <div class="footer-contact-row">
+          <span class="material-symbols-outlined">call</span>
+          <a href="tel:+902121234567">+90 (212) 123 45 67</a>
+        </div>
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>© 2025 Curator Professional Services. Tüm hakları saklıdır.</p>
+    <div class="footer-legal">
+      <a href="#">Gizlilik Politikası</a>
+      <a href="#">Kullanım Şartları</a>
+      <a href="#">Çerez Ayarları</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/reveal.js"></script>
+<script src="../assets/js/iletisim.js"></script>
+</body>
+</html>
